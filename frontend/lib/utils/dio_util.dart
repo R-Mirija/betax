@@ -2,15 +2,15 @@ import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 
 // api
-const apiAuthority = 'http://localhost:8000';
+const apiAuthority = 'https://betax-production.up.railway.app';
 const apiPrefix = '/';
 
 // http utils
 final dio =
 Dio(
   BaseOptions(
-    connectTimeout: const Duration(seconds: 10),
-    receiveTimeout: const Duration(seconds: 10),
+    connectTimeout: const Duration(seconds: 20),
+    receiveTimeout: const Duration(seconds: 20),
     baseUrl: '$apiAuthority$apiPrefix',
     headers: {
       Headers.contentTypeHeader: 'application/json',
