@@ -24,12 +24,20 @@ A cross-platform mobile application built with Flutter, powered by a FastAPI bac
 * **Database:** PostgreSQL (Relational storage optimized for geospatial and transit network data)
 
 > **Deployment Note:** The backend (FastAPI) and the PostgreSQL database are fully configured and hosted in production on the **Railway** cloud platform. Local backend or database installation is not required to run and test the application client.
-
 ---
 
 ### Screenshots
 
-*(Insert application screenshots or a demo GIF here)*
+<p align="center">
+  <img src="screenshots/shot1.jpg" width="25%" />
+  <img src="screenshots/shot2.jpg" width="25%" />
+  <img src="screenshots/shot3.jpg" width="25%" />
+</p>
+<p align="center">
+  <img src="screenshots/shot4.jpg" width="25%" />
+  <img src="screenshots/shot5.jpg" width="25%" />
+  <img src="screenshots/shot6.jpg" width="25%" />
+</p>
 
 ---
 
