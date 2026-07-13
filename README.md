@@ -1,59 +1,59 @@
-# 🚌 BETAX
+# BETAX
 
-**Find the perfect bus itinerary anywhere in Antananarivo, featuring integrated mapping and real-time geolocation.**
-
----
-
-## 📝 Short Description
-A mobile application built with Flutter, FastAPI, and PostgreSQL to navigate Antananarivo's bus network easily. Features comprehensive line/stop listings, geolocation, and smart A-to-B route planning.
+An intuitive mobile application designed to simplify public transit navigation in Antananarivo, featuring integrated mapping, route planning, and real-time geolocation.
 
 ---
 
-## 🚀 Overview
-
-Navigating public transport in Antananarivo can be challenging. This project provides a seamless solution for both residents and visitors to plan their journeys across the capital. By combining an intuitive mobile interface with a robust backend, users can map out their trips from Point A to Point B efficiently.
-
-## ✨ Features
-
-* 🗺️ **Integrated Map & Geolocation:** View your real-time location and discover nearby bus stops instantly.
-* 🚌 **Bus Lines & Stops Directory:** A complete, organized database of all Antananarivo bus lines, cooperatives, and their exact stops.
-* 📍 **A-to-B Route Planner:** Enter your start and end points to get the optimal bus itinerary, including connections if required.
-
-## 🛠️ Tech Stack
-
-* **Frontend:** Flutter (Dart) — For a smooth, cross-platform mobile experience.
-* **Backend:** FastAPI (Python) — High-performance, asynchronous REST API.
-* **Database:** PostgreSQL — Relational database to store complex geospatial data, routes, and stops efficiently.
-
-> 🌐 **Architectural Note:** The backend (FastAPI) and the PostgreSQL database (`betax`) are already fully configured and deployed in production on the **Railway** platform. No local installation of the server or the database is required to run the application.
-
-## 📸 Screenshots
-
-*(Add screenshots or a GIF of your app here to make your repository stand out!)*
+### Description
+A cross-platform mobile application built with Flutter, powered by a FastAPI backend and a PostgreSQL database. It provides comprehensive listings of bus lines and stops, smart A-to-B route optimization, and geolocation services.
 
 ---
 
-## ⚙️ Getting Started
+### Key Features
 
-### Prerequisites
-* [Flutter SDK](https://docs.flutter.dev/get-started/install)
-* **Android Setup:** Android Studio or Android SDK Command-line tools (for Android emulator/devices)
-* **iOS Setup (Mac only):** Xcode (for iOS simulator/devices)
+* **Interactive Mapping & Geolocation:** Track your position in real time and discover nearby transit stops.
+* **Transit Directory:** Comprehensive and structured database mapping Antananarivo's bus lines, local cooperatives, and exact stops.
+* **Itinerary Planner:** Advanced A-to-B routing algorithm to calculate the most efficient bus journeys, complete with necessary connections.
+
+---
+
+### Tech Stack
+
+* **Frontend:** Flutter / Dart (Cross-platform mobile development)
+* **Backend:** FastAPI / Python (Asynchronous REST API)
+* **Database:** PostgreSQL (Relational storage optimized for geospatial and transit network data)
+
+> **Deployment Note:** The backend (FastAPI) and the PostgreSQL database are fully configured and hosted in production on the **Railway** cloud platform. Local backend or database installation is not required to run and test the application client.
+
+---
+
+### Screenshots
+
+*(Insert application screenshots or a demo GIF here)*
+
+---
+
+### Getting Started
+
+#### Prerequisites
+* [Flutter SDK](https://docs.flutter.dev/get-started/install) (Stable channel)
+* **For Android deployment:** Android Studio or Android SDK Command-line tools
+* **For iOS deployment (macOS only):** Xcode 
 
 ---
 
 ### Frontend Setup
 
 #### 1. Configure Android Secrets
-Before building the app, you need to add the Google Maps API key to your local Android configuration. 
+To enable the map integration, you must append your Google Maps API key to your local environment configuration. 
 
-Open the file `frontend/android/local.properties` (create it if it doesn't exist) and add the following line:
+Open or create `frontend/android/local.properties` and add the following entry:
 
 ```properties
 MAPS_API_KEYS=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao
 ```
 
-#### 2. Tap these commands in the root directory of the project
+#### 2. Tap the following commands in the root directory of the project
 ```bash
 cd frontend
 flutter pub get
