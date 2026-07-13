@@ -58,6 +58,7 @@ To enable the map integration, you must append your Google Maps API key to your 
 Open or create `frontend/android/local.properties` and add the following entry:
 
 ```properties
+# This is a free API key I found on GitHub :\
 MAPS_API_KEYS=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao
 ```
 
